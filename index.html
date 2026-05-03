@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="description" content="Kinder Garden Academy in Sanfehatbazzar, Achham, Nepal offers quality education, experienced teachers, extracurricular activities, and modern facilities. Enroll now for academic session 2083." />
+  <meta name="keywords" content="Kinder Garden Academy, school in Achham, best school Nepal, early childhood education, Sanfehatbazzar school, admission 2083, Prithvi Bahadur Kunwar" />
+  <meta name="author" content="Kinder Garden Academy" />
+  <meta property="og:title" content="Kinder Garden Academy – Modern International School in Nepal" />
+  <meta property="og:description" content="Shaping future leaders through academic rigor, creativity, and global perspectives." />
+  <meta property="og:image" content="https://www.kindergardenacademy.edu.np/Image/Logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Kinder Garden Academy | International School Achham, Nepal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .serif { font-family: 'Playfair Display', serif; font-weight: 600; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #1e3a8a; border-radius: 10px; }
+
+    @keyframes fadeUp { 0% { opacity: 0; transform: translateY(40px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .top-contact-bar {
+      background: transparent; backdrop-filter: none; border-bottom: 1px solid transparent;
+      transition: all 0.4s ease; color: rgba(255,255,255,0.9);
+    }
+    .top-contact-bar a { color: rgba(255,255,255,0.85); transition: all 0.3s ease; }
+    .top-contact-bar a:hover { color: #ffffff; }
+    .top-contact-bar .contact-icon { color: #fbbf24; }
+    .top-contact-bar.scrolled {
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(0,0,0,0.06); color: #374151;
+    }
+    .top-contact-bar.scrolled a { color: #4b5563; }
+    .top-contact-bar.scrolled a:hover { color: #1e3a8a; }
+    .top-contact-bar.scrolled .contact-icon { color: #1e3a8a; }
+
+    .navbar { transition: all 0.4s ease; background: transparent; }
+    .navbar.scrolled {
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(20px);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+    }
+    .nav-link { position: relative; transition: color 0.3s; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #1e3a8a; border-radius: 2px; transition: width 0.3s ease; }
+    .nav-link:hover::after { width: 100%; }
+    .hero-slide { position: absolute; inset: 0; background-size: cover; background-position: center; transition: opacity 1.2s ease; opacity: 0; }
+    .hero-slide.active { opacity: 1; }
+    .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,20,60,0.5) 50%, rgba(0,0,0,0.6) 100%); }
+    .modern-card {
+      background: white; border-radius: 1.5rem; padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04); transition: all 0.4s cubic-bezier(0.2,0.9,0.4,1.1);
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+    .modern-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,0,0,0.08); border-color: rgba(30,64,175,0.1); }
+    .btn-primary {
+      background: #1e3a8a; color: white; padding: 0.9rem 2.2rem; border-radius: 50px; font-weight: 600;
+      letter-spacing: 0.5px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-primary:hover { background: #15306a; transform: translateY(-3px); box-shadow: 0 15px 30px rgba(30,64,175,0.25); }
+    .btn-outline { border: 2px solid white; color: white; padding: 0.6rem 1.8rem; border-radius: 50px; font-weight: 600; transition: all 0.3s; }
+    .btn-outline.dark { border-color: #1e293b; color: #1e293b; }
+    .btn-outline.dark:hover { background: #1e293b; color: white; }
+    .footer-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #e2e8f0; }
+    .footer-link { transition: color 0.3s, transform 0.3s; }
+    .footer-link:hover { color: #60a5fa; transform: translateX(5px); }
+    .preloader { position: fixed; inset: 0; background: white; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.6s ease, visibility 0.6s; }
+    .preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .loader-ring { width: 60px; height: 60px; border: 3px solid #e2e8f0; border-top: 3px solid #1e3a8a; border-radius: 50%; animation: spin 0.8s linear infinite; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* Notice Modal */
+    .notice-modal-overlay {
+      background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); z-index: 10000;
+      display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .notice-modal-overlay.active { opacity: 1; visibility: visible; }
+    .notice-modal-content {
+      position: relative; background: white; border-radius: 1.5rem; overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3); max-width: 90vw; max-height: 90vh;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .notice-image-wrapper {
+      display: flex; justify-content: center; align-items: center; padding: 0.5rem;
+    }
+    .notice-image-wrapper img {
+      max-width: 85vw; max-height: 80vh; object-fit: contain; border-radius: 1.25rem;
+      display: block; margin: 0 auto;
+    }
+    .notice-close-btn {
+      position: absolute; top: 0.75rem; right: 0.75rem; background: rgba(0,0,0,0.6);
+      color: white; border: none; width: 2.5rem; height: 2.5rem; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; cursor: pointer;
+      font-size: 1.25rem; transition: all 0.3s ease; z-index: 10;
+    }
+    .notice-close-btn:hover { background: #1e3a8a; transform: scale(1.1); }
+    .notice-caption {
+      text-align: center; padding: 0.75rem 1rem; background: #f8fafc;
+      font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="flex flex-col items-center gap-4">
+      <div class="loader-ring"></div>
+      <img src="Image/Logo.png" alt="Kinder Garden Academy" class="w-16 h-16 object-contain">
+      <p class="text-sm text-gray-500 font-medium tracking-wide">Preparing for excellence...</p>
+    </div>
+  </div>
+
+  <!-- Notice Modal -->
+  <div id="noticeModal" class="notice-modal-overlay fixed inset-0" aria-modal="true" role="dialog">
+    <div class="notice-modal-content">
+      <button id="closeNoticeBtn" class="notice-close-btn" aria-label="Close notice">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="notice-image-wrapper">
+        <img src="Image/Notice/Best of Luck-2082.png" alt="Important notice: Academic Session 2083 starting soon">
+      </div>
+      <div class="notice-caption">
+        📢 Official Notice – Academic Session 2083 Begins Baishakh 10
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Contact Bar (transparent) -->
+  <div id="topContactBar" class="top-contact-bar fixed top-0 left-0 w-full z-[70] py-2.5 px-4 md:px-8 text-xs md:text-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center md:justify-end gap-x-5 gap-y-1">
+      <a href="#" class="flex items-center gap-1.5 transition"><i class="fas fa-map-marker-alt contact-icon text-sm"></i> Sanfehatbazzar-03, Achham, Nepal</a>
+      <span class="hidden sm:block w-px h-4 bg-white/30 transition-all duration-400" id="barDivider1"></span>
+      <a href="tel:+977091522599" class="flex items-center gap-1.5 transition"><i class="fas fa-phone-alt contact-icon text-sm"></i> +977-097-625139</a>
+      <span class="hidden sm:block w-px h-4 bg-white/30 transition-all duration-400" id="barDivider2"></span>
+      <a href="mailto:infokindergardenacademy@gmail.com" class="flex items-center gap-1.5 transition"><i class="fas fa-envelope contact-icon text-sm"></i> infokindergardenacademy@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- Navigation (transparent) -->
+  <nav id="navbar" class="navbar fixed w-full z-50 py-4 px-6 md:px-10 transition-all duration-500" style="top: 40px;">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="Image/Logo.png" alt="Logo" class="h-12 w-12 md:h-14 md:w-14 object-contain drop-shadow-lg transition-transform duration-400 hover:scale-105">
+        <span id="logoText" class="text-xl md:text-2xl font-bold text-white transition-colors duration-300">Kinder Garden Academy</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-white/90 hover:text-white font-medium">Home</a>
+        <a href="programs.html" class="nav-link text-white/90 hover:text-white font-medium">Programs</a>
+        <a href="teams.html" class="nav-link text-white/90 hover:text-white font-medium">Our Team</a>
+        <a href="gallery.html" class="nav-link text-white/90 hover:text-white font-medium">Gallery</a>
+        <a href="faqs.html" class="nav-link text-white/90 hover:text-white font-medium">FAQs</a>
+      </div>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#" id="loginBtn" class="btn-outline text-sm py-2.5 px-6">Login</a>
+        <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg text-sm">Result</a>
+      </div>
+      <button id="menuToggle" class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden flex-col bg-white/95 backdrop-blur-lg mt-4 rounded-xl shadow-2xl p-4 space-y-3 text-gray-800">
+      <a href="index.html" class="block py-2 px-3 rounded-lg hover:bg-blue-50">Home</a>
+      <a href="programs.html" class="block py-2 px-3 rounded-lg hover:bg-blue-50">Programs</a>
+      <a href="teams.html" class="block py-2 px-3 rounded-lg hover:bg-blue-50">Our Team</a>
+      <a href="gallery.html" class="block py-2 px-3 rounded-lg hover:bg-blue-50">Gallery</a>
+      <a href="faqs.html" class="block py-2 px-3 rounded-lg hover:bg-blue-50">FAQs</a>
+      <div class="flex gap-3 pt-2"><a href="#" class="flex-1 text-center bg-blue-900 text-white py-2 rounded-full">Login</a><a href="#" class="flex-1 text-center bg-amber-500 text-white py-2 rounded-full">Result</a></div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen w-full overflow-hidden">
+    <div class="hero-slide active" style="background-image: url('Image/Background/Background.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('Image/Background/Background 2.jpeg');"></div>
+    <div class="hero-slide" style="background-image: url('Image/Background/Background 1.jpg');"></div>
+    <div class="absolute inset-0 hero-overlay"></div>
+    <div class="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6 mt-10">
+      <div class="max-w-4xl animate-fadeUp">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-sm font-semibold tracking-wider mb-6 border border-white/20">EST. 2063</span>
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-2xl">Where <span class="text-amber-400">Young Minds</span> Blossom</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10 font-light">A modern international school in the heart of Achham, blending academic rigor with creativity and global values.</p>
+        <div class="flex flex-wrap justify-center gap-5">
+          <a href="#" class="btn-primary">Explore Programs <i class="fas fa-arrow-right ml-2"></i></a>
+          <a href="#" class="btn-outline">Virtual Tour <i class="fas fa-play ml-2"></i></a>
+        </div>
+      </div>
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce">
+        <span class="text-white/70 text-xs tracking-widest mb-2">SCROLL</span>
+        <div class="w-5 h-8 border-2 border-white/60 rounded-full flex justify-center"><div class="w-1.5 h-3 bg-white rounded-full mt-1 animate-pulse"></div></div>
+      </div>
+    </div>
+    <div class="absolute bottom-8 right-8 z-20 flex gap-3">
+      <div class="slide-dot w-3 h-3 rounded-full bg-white cursor-pointer active" data-index="0"></div>
+      <div class="slide-dot w-3 h-3 rounded-full bg-white/50 cursor-pointer" data-index="1"></div>
+      <div class="slide-dot w-3 h-3 rounded-full bg-white/50 cursor-pointer" data-index="2"></div>
+    </div>
+  </section>
+
+  <!-- School Stats -->
+  <section class="py-16 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="reveal"><div class="text-4xl md:text-5xl font-bold counter" data-target="500">0</div><p class="text-blue-200 mt-2 text-sm">Students Enrolled</p></div>
+      <div class="reveal"><div class="text-4xl md:text-5xl font-bold counter" data-target="35">0</div><p class="text-blue-200 mt-2 text-sm">Expert Educators</p></div>
+      <div class="reveal"><div class="text-4xl md:text-5xl font-bold counter" data-target="20">0</div><p class="text-blue-200 mt-2 text-sm">Years of Excellence</p></div>
+      <div class="reveal"><div class="text-4xl md:text-5xl font-bold counter" data-target="15">0</div><p class="text-blue-200 mt-2 text-sm">Clubs & Activities</p></div>
+    </div>
+  </section>
+
+  <!-- Principal Message -->
+  <section class="py-24 md:py-32 max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal"><img src="Image/Teacher Photos/Prithvi Bahadur Kunwar.jpg" alt="Principal" class="rounded-3xl shadow-2xl w-full object-cover hover:scale-105 transition-transform duration-700"></div>
+      <div class="space-y-6 reveal">
+        <span class="text-blue-800 font-semibold tracking-widest uppercase text-sm">Managing Director's Vision</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">A Message from <span class="text-blue-800">Our Principal</span></h2>
+        <p class="text-gray-600 text-lg leading-relaxed">"At Kinder Garden Academy, we don't just educate – we inspire. Our approach blends internationally recognized curricula with Nepal's rich cultural heritage, empowering students to become compassionate, innovative global citizens."</p>
+        <div class="border-l-4 border-amber-500 pl-6"><p class="font-bold text-xl text-gray-800">Prithvi Bahadur Kunwar</p><p class="text-gray-500">Managing Director</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal"><span class="text-blue-800 font-semibold tracking-widest uppercase">Our Difference</span><h2 class="text-4xl md:text-5xl font-bold mt-3 text-gray-900">Why Families <span class="text-blue-800">Choose Us</span></h2></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="modern-card reveal text-center"><div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">🎓</div><h3 class="text-2xl font-bold mb-3">Global Curriculum</h3><p class="text-gray-600">International standards with a local heart, preparing students for a connected world.</p></div>
+        <div class="modern-card reveal text-center"><div class="w-20 h-20 bg-emerald-100 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">🤝</div><h3 class="text-2xl font-bold mb-3">Whole Child Focus</h3><p class="text-gray-600">Social-emotional learning, arts, and athletics integrated into daily life.</p></div>
+        <div class="modern-card reveal text-center"><div class="w-20 h-20 bg-amber-100 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">🏆</div><h3 class="text-2xl font-bold mb-3">Future-Ready Skills</h3><p class="text-gray-600">Coding, robotics, and leadership programs from early years onward.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 reveal">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">What <span class="text-blue-800">Students</span> Say</h2>
+      <div class="relative overflow-hidden rounded-3xl bg-white shadow-xl">
+        <div class="testimonial-track flex transition-transform duration-700" id="testimonialTrack">
+          <div class="testimonial-card min-w-full flex flex-col items-center text-center p-8"><img src="Image/Students/Biplove Kunwar.jpg" class="w-24 h-24 rounded-full object-cover mb-5 border-4 border-blue-100"><p class="italic text-gray-600 text-lg max-w-xl">"This school gave me wings. The teachers truly care about our dreams."</p><h4 class="mt-4 font-bold text-blue-900">Biplove Kunwar</h4><span class="text-sm text-gray-400">Batch 2080</span></div>
+          <div class="testimonial-card min-w-full flex flex-col items-center text-center p-8"><img src="Image/Students/Rabina Chaudhary.jpg" class="w-24 h-24 rounded-full object-cover mb-5 border-4 border-emerald-100"><p class="italic text-gray-600 text-lg max-w-xl">"I found my passion for science here. The labs are amazing!"</p><h4 class="mt-4 font-bold text-blue-900">Rabina Chaudhary</h4><span class="text-sm text-gray-400">Batch 2080</span></div>
+          <div class="testimonial-card min-w-full flex flex-col items-center text-center p-8"><img src="Image/Students/Alisha Kunwar.jpg" class="w-24 h-24 rounded-full object-cover mb-5 border-4 border-purple-100"><p class="italic text-gray-600 text-lg max-w-xl">"Extracurriculars helped me become confident and creative."</p><h4 class="mt-4 font-bold text-blue-900">Alisha Kunwar</h4><span class="text-sm text-gray-400">Batch 2081</span></div>
+        </div>
+        <div class="flex justify-center gap-3 pb-6"><div class="dot w-3 h-3 rounded-full bg-blue-800 cursor-pointer active" data-index="0"></div><div class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer" data-index="1"></div><div class="dot w-3 h-3 rounded-full bg-gray-300 cursor-pointer" data-index="2"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center reveal">
+      <span class="text-blue-800 font-semibold tracking-widest uppercase">Our Collaborators</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-12">Trusted Partners</h2>
+      <div class="flex flex-wrap justify-center items-center gap-12">
+        <div class="flex flex-col items-center gap-3"><img src="Image/Digital Nepal.png" alt="Digital Nepal" class="h-20 md:h-24 object-contain"><p class="text-sm font-medium text-gray-600">Digital Nepal</p></div>
+        <div class="flex flex-col items-center gap-3"><img src="Image/Sudeep Logo.png" alt="Supeksha Innovations Nepal" class="h-20 md:h-24 object-contain"><p class="text-sm font-medium text-gray-600">Supeksha Innovations Nepal</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-gradient pt-20 pb-10 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div><div class="flex items-center gap-3 mb-4"><img src="Image/Logo.png" class="w-10 h-10" alt="Logo"><span class="text-xl font-bold text-white">Kinder Garden Academy</span></div><p class="text-gray-400 text-sm leading-relaxed">Nurturing future leaders through innovation, compassion, and academic excellence since 2063.</p><div class="flex gap-4 mt-5"><a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a><a href="#" class="text-gray-400 hover:text-pink-400"><i class="fab fa-instagram"></i></a><a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-tiktok"></i></a></div></div>
+      <div><h4 class="text-white font-semibold mb-4">Quick Links</h4><ul class="space-y-2 text-gray-400 text-sm"><li><a href="index.html" class="footer-link inline-block">Home</a></li><li><a href="programs.html" class="footer-link inline-block">Programs</a></li><li><a href="teams.html" class="footer-link inline-block">Our Team</a></li><li><a href="gallery.html" class="footer-link inline-block">Gallery</a></li><li><a href="faqs.html" class="footer-link inline-block">FAQs</a></li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Contact</h4><ul class="space-y-2 text-gray-400 text-sm"><li class="flex items-start gap-2"><i class="fas fa-map-marker-alt mt-1 text-blue-400"></i> Sanfehatbazzar-03, Achham, Nepal</li><li class="flex items-center gap-2"><i class="fas fa-phone text-blue-400"></i> +977-097-625139</li><li class="flex items-center gap-2"><i class="fas fa-envelope text-blue-400"></i> infokindergardenacademy@gmail.com</li></ul></div>
+      <div><h4 class="text-white font-semibold mb-4">Stay Informed</h4><p class="text-gray-400 text-sm mb-3">Subscribe to our newsletter.</p><div class="flex"><input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-full bg-gray-800 text-white border border-gray-700 w-full text-sm"><button class="bg-blue-700 hover:bg-blue-800 px-5 py-2 rounded-r-full text-white"><i class="fas fa-paper-plane"></i></button></div></div>
+    </div>
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm"><p>© 2025 Kinder Garden Academy · Designed with ❤️ by Supeksha Innovations Nepal</p></div>
+  </footer>
+
+  <script>
+    // Preloader and Notice
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').classList.add('hidden');
+        // Show notice modal after preloader
+        document.getElementById('noticeModal').classList.add('active');
+      }, 800);
+    });
+
+    const closeNoticeBtn = document.getElementById('closeNoticeBtn');
+    const noticeModal = document.getElementById('noticeModal');
+    closeNoticeBtn.addEventListener('click', () => {
+      noticeModal.classList.remove('active');
+    });
+    // Close on overlay click
+    noticeModal.addEventListener('click', (e) => {
+      if (e.target === noticeModal) noticeModal.classList.remove('active');
+    });
+    // ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && noticeModal.classList.contains('active')) {
+        noticeModal.classList.remove('active');
+      }
+    });
+
+    // Scroll behavior
+    const navbar = document.getElementById('navbar');
+    const logoText = document.getElementById('logoText');
+    const topBar = document.getElementById('topContactBar');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const loginBtn = document.getElementById('loginBtn');
+    const barDividers = [document.getElementById('barDivider1'), document.getElementById('barDivider2')];
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY > 50;
+      if (scrolled) {
+        navbar.classList.add('scrolled');
+        logoText.classList.replace('text-white', 'text-gray-900');
+        navLinks.forEach(l => { l.classList.replace('text-white/90', 'text-gray-800'); l.classList.replace('hover:text-white', 'hover:text-blue-900'); });
+        if (loginBtn) loginBtn.classList.add('dark');
+        topBar.classList.add('scrolled');
+        barDividers.forEach(d => d?.classList.replace('bg-white/30', 'bg-gray-300'));
+      } else {
+        navbar.classList.remove('scrolled');
+        logoText.classList.replace('text-gray-900', 'text-white');
+        navLinks.forEach(l => { l.classList.replace('text-gray-800', 'text-white/90'); l.classList.replace('hover:text-blue-900', 'hover:text-white'); });
+        if (loginBtn) loginBtn.classList.remove('dark');
+        topBar.classList.remove('scrolled');
+        barDividers.forEach(d => d?.classList.replace('bg-gray-300', 'bg-white/30'));
+      }
+    });
+
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // Hero slider
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.slide-dot');
+    let current = 0;
+    function showSlide(index) {
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      current = index;
+    }
+    dots.forEach(dot => dot.addEventListener('click', (e) => showSlide(parseInt(e.target.dataset.index))));
+    setInterval(() => showSlide((current + 1) % slides.length), 5000);
+
+    // Testimonial slider
+    const track = document.getElementById('testimonialTrack');
+    const tDots = document.querySelectorAll('.dot');
+    let tIndex = 0;
+    function moveTestimonial(index) {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      tDots.forEach(d => d.classList.remove('active'));
+      tDots[index].classList.add('active');
+      tIndex = index;
+    }
+    tDots.forEach(dot => dot.addEventListener('click', (e) => moveTestimonial(parseInt(e.target.dataset.index))));
+    setInterval(() => moveTestimonial((tIndex + 1) % tDots.length), 5000);
+
+    // Counters
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.dataset.target;
+          const duration = 2000;
+          const step = target / (duration / 16);
+          let current = 0;
+          const update = () => {
+            current += step;
+            if (current < target) { el.innerText = Math.floor(current); requestAnimationFrame(update); }
+            else el.innerText = target;
+          };
+          update();
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    // Reveal
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
+    }, { threshold: 0.15 });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
